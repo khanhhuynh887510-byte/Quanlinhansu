@@ -1,0 +1,33 @@
+{
+  "name": "qu-n-l--nh-n-s-",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node --watch server/server.js",
+    "dev:all": "concurrently -k -p \"[{name}]\" -n \"SERVER,VITE\" -c \"cyan.bold,green.bold\" \"npm run server\" \"npm run dev\"",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "canvas-confetti": "^1.9.4",
+    "concurrently": "^10.0.5",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lucide-react": "^1.45.0",
+    "mysql2": "^3.24.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}
